@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.~lock.*
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+node_modules/
+
+# Local-only: never publish source / build artifacts
+source/
+dist/
+build/
+*.bak
+*.tmp
