@@ -228,6 +228,102 @@ p { margin: 0 0 1.1rem; }
 .manifesto-body p { margin: 0 0 1.4rem; }
 .manifesto-body strong { color: var(--accent); font-weight: 600; }
 
+/* === Mission === */
+.mission { padding: 5.5rem 0; background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FC 100%); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.mission .section-eyebrow { text-align: center; }
+.mission-headline {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  text-align: center;
+  max-width: 22em;
+  margin: 0 auto 2rem;
+}
+.mission-headline em { font-style: italic; color: var(--accent-soft); }
+.mission-body {
+  font-family: var(--serif);
+  font-size: 1.22rem;
+  line-height: 1.6;
+  color: var(--ink-mid);
+  max-width: 38em;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+.mission-body strong { color: var(--accent); font-weight: 600; }
+.pull-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+  line-height: 1.45;
+  color: var(--accent);
+  max-width: 30em;
+  margin: 2.5rem auto 0;
+  padding: 1.5rem 0 1.5rem 1.8rem;
+  border-left: 4px solid var(--accent-soft);
+  text-align: left;
+}
+.pull-quote-attrib {
+  display: block;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent-soft);
+  margin-top: 0.9rem;
+}
+
+/* === For governments === */
+.for-gov { padding: 5rem 0; background: var(--accent-bg); border-bottom: 1px solid var(--rule); }
+.for-gov h2 { max-width: 18em; }
+.for-gov .lead { max-width: 42em; font-size: 1.12rem; }
+.gov-stakeholders {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.gov-stakeholders li {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent-soft);
+  padding: 1rem 1.2rem;
+  font-size: 0.96rem;
+  color: var(--ink-mid);
+  line-height: 1.45;
+  border-radius: 4px;
+}
+.gov-stakeholders li strong { display: block; color: var(--accent); font-family: var(--serif); font-size: 1.05rem; margin-bottom: 0.2rem; font-weight: 600; }
+.gov-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0 0;
+  padding: 1.8rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.gov-stat { text-align: center; }
+.gov-stat-num {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.6vw, 2.6rem);
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.05;
+  margin: 0 0 0.3rem;
+}
+.gov-stat-label {
+  font-size: 0.86rem;
+  color: var(--ink-mid);
+  letter-spacing: 0.02em;
+}
+
 /* === Hooks grid === */
 .hooks-intro { margin-bottom: 3rem; }
 .hooks-grid {
@@ -397,6 +493,7 @@ footer.site-footer a:hover { color: #fff; }
   <div class="wrap topbar-inner">
     <div class="topbar-logo">Lean Innovation 3.0 <span>· book</span></div>
     <nav class="topbar-nav">
+      <a href="#mission">Mission</a>
       <a href="#manifesto">Manifesto</a>
       <a href="#hooks">Chapters</a>
       <a href="#co-creators">Co-create</a>
@@ -482,6 +579,56 @@ footer.site-footer a:hover { color: #fff; }
       <h2>Igor Peer</h2>
       <p>25 лет в венчуростроительстве. 18+ запущенных стартапов в B2B SaaS, fintech, deeptech, ML/AI. Бывший партнёр RFR International, CEO Startup Mastery. Mentor founder-команд в Израиле, EU, LatAm и Gulf. Co-founder current pioneer-portfolio: Vaydy, MetaSense, EyeFixCare, Detronyx, Pulse Charge, Real Meal, Corporate Legal — все с AI co-founder Mars как операционным backbone.</p>
       <p>Lean Innovation 3.0 — методологический синтез четверти века наблюдений за тем, как меняется global startup landscape в AI-augmented era 2025–2026, и систематизация принципов, которые применимы к любому стартапу — в Америке, Китае или в остальном мире. Принципы глобальные, потому что отвечают тому, что сегодня требуется от успешных стартапов. Особый фокус методологии — на регионы, где юникорны пока массово не строятся: пять anchor-стран (Portugal, Brazil, UAE, Kazakhstan, Thailand) и шире.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section id="mission" class="mission">
+  <div class="wrap">
+    <div class="section-eyebrow">Наша миссия</div>
+    <h2 class="mission-headline">Создавать <em>local-based / national-based</em> unicorns.</h2>
+    <p class="mission-body">
+      <strong>Тысячи стартапов за 5 лет</strong> через сеть локальных хабов. Через <strong>Local PMF</strong> взрастить наиболее перспективные, которые становятся глобальными юникорнами — оставаясь при этом локальными, национальными. Эту задачу сегодня практически никто не решает: все хотят, но <strong>методология не позволяет</strong>. Lean Innovation 3.0 + Startup Nations Association создают прецедент.
+    </p>
+    <blockquote class="pull-quote">
+      «Это задача, которую сегодня практически никто не решает. Все хотят, но методология не позволяет. Мы создаём прецеденты.»
+      <span class="pull-quote-attrib">— Igor Peer · Mission statement</span>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ FOR GOVERNMENTS ============ -->
+<section id="for-governments" class="for-gov">
+  <div class="wrap-narrow">
+    <div class="section-eyebrow">Для правительств · министерств · экосистем</div>
+    <h2>Программа, built как partnership-ready инициатива для национальных экосистем.</h2>
+    <p class="lead">Создание национальных tech-юникорнов — стратегический интерес каждой страны: <strong>налоги, рабочие места, высокие технологии, узнаваемость на global tech landscape</strong>. Lean Innovation 3.0 и Startup Nations Association built так, чтобы хорошо восприниматься правительствами стран, министерствами, локальной экосистемой. Все ключевые стейкхолдеры могут стать партнёрами hub-сети в своей стране.</p>
+    <ul class="gov-stakeholders">
+      <li><strong>Правительства</strong>National innovation agendas + sovereign tech-priorities</li>
+      <li><strong>Министерства инноваций</strong>Министерства экономики, технологий, цифрового развития</li>
+      <li><strong>Sovereign funds</strong>Долгосрочный capital с national-strategic mandate</li>
+      <li><strong>Регуляторы tech-сектора</strong>Sandbox-frameworks, licensing, fintech / healthtech / AI</li>
+      <li><strong>Локальные акселераторы</strong>Existing innovation hubs + венчур-студии</li>
+      <li><strong>Family-office capital</strong>National wealth, ищущий tech-exposure</li>
+    </ul>
+    <div class="gov-stats">
+      <div class="gov-stat">
+        <div class="gov-stat-num">1000×</div>
+        <div class="gov-stat-label">стартапов на hub</div>
+      </div>
+      <div class="gov-stat">
+        <div class="gov-stat-num">5 лет</div>
+        <div class="gov-stat-label">временной горизонт</div>
+      </div>
+      <div class="gov-stat">
+        <div class="gov-stat-num">5 hubs</div>
+        <div class="gov-stat-label">= 5000 national-based candidates</div>
+      </div>
+      <div class="gov-stat">
+        <div class="gov-stat-num">50–100</div>
+        <div class="gov-stat-label">unicorn-status (по historic 1–2% conversion)</div>
+      </div>
     </div>
   </div>
 </section>
@@ -587,11 +734,14 @@ footer.site-footer a:hover { color: #fff; }
       <div>
         <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Я приглашаю тебя, если ты —</h3>
         <ul class="co-list">
-          <li>Operator венчур-студии или акселератора</li>
           <li>Founder с реальным track record в одном из 5 anchor регионов</li>
+          <li>Operator венчур-студии или акселератора</li>
           <li>Partner в local VC или sovereign fund с tech-thesis</li>
           <li>Author / methodologist с собственной practice</li>
           <li>Corporate innovation lead, ищущий design partnerships</li>
+          <li><strong>Government innovation programs</strong> — national agendas, hub-партнёрства</li>
+          <li><strong>Министерства экономики / технологий</strong> — strategic-level stakeholders</li>
+          <li><strong>Регуляторы tech-сектора</strong> — sandbox, licensing, policy frameworks</li>
         </ul>
         <div id="dao" class="dao-note">
           <strong>What's next: DAO?</strong> Инициатива может развернуться в DAO для co-creators — управление treasury, голосование за направление, разделение revenue от методологических лицензий. To be explored as community grows.
@@ -620,10 +770,10 @@ footer.site-footer a:hover { color: #fff; }
       <div class="arch-arrow">↓</div>
       <div class="arch-level">
         <div class="arch-level-name">Startup Nations Association</div>
-        <div class="arch-level-tag">Regional ecosystem coordination · policy · capital networks</div>
+        <div class="arch-level-tag"><strong style="color:#fff;">Vehicle миссии — создание national-based unicorns.</strong> Brand + platform для партнёрства с правительствами, министерствами, sovereign funds. Regional ecosystem coordination · policy · capital networks. Цель: <strong style="color:#fff;">1000 startups × 5 years × 5 hubs = 5000 national-based candidates</strong>, из которых через Local PMF взращиваются глобальные юникорны, остающиеся локальными, национальными.</div>
       </div>
     </div>
-    <blockquote class="arch-quote">«Местная победа сначала. Глобальная сеть hubs — потом. AI co-founder — на каждом шаге.»</blockquote>
+    <blockquote class="arch-quote">«Местная победа сначала. Глобальная сеть hubs — потом. AI co-founder — на каждом шаге. Юникорн — local-based, national-based.»</blockquote>
   </div>
 </section>
 
