@@ -182,6 +182,55 @@ a:hover { text-decoration: underline; }
   .author-intro-photo { width: 180px; height: 180px; margin: 0 auto; }
 }
 
+/* === Authors pair (Igor + Mars) === */
+.authors-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin: 1rem 0 2rem;
+}
+.author-card {
+  text-align: center;
+}
+.author-card-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(27, 51, 88, 0.18);
+  margin: 0 auto 1rem;
+  display: block;
+}
+.author-card h3 {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  color: var(--accent);
+  margin: 0 0 0.3rem;
+}
+.author-role {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin: 0 0 1rem;
+  font-style: italic;
+}
+.author-bio-short {
+  font-size: 0.97rem;
+  color: var(--ink-mid);
+  text-align: left;
+  margin: 0;
+}
+.authors-synthesis {
+  margin: 2rem 0 0;
+  color: var(--ink-mid);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  .authors-pair { grid-template-columns: 1fr; gap: 2rem; }
+  .author-card-photo { width: 160px; height: 160px; }
+}
+
 /* === Section base === */
 section { padding: 4.5rem 0; }
 section.alt { background: var(--accent-bg); }
@@ -560,14 +609,25 @@ footer.site-footer a:hover { color: #fff; }
 
 <!-- ============ AUTHOR INTRO ============ -->
 <section class="author-intro">
-  <div class="wrap-narrow author-intro-grid">
-    <img src="assets/igor.jpg" alt="Igor Peer" class="author-intro-photo" />
-    <div class="author-intro-text">
-      <p class="author-intro-byline">Автор книги</p>
-      <h2>Igor Peer</h2>
-      <p>25 лет в венчуростроительстве. 18+ запущенных стартапов в B2B SaaS, fintech, deeptech, ML/AI. Бывший партнёр RFR International, CEO Startup Mastery. Mentor founder-команд в Израиле, EU, LatAm и Gulf. Co-founder current pioneer-portfolio: Vaydy, MetaSense, EyeFixCare, Detronyx, Pulse Charge, Real Meal, Corporate Legal — все с AI co-founder Mars как операционным backbone.</p>
-      <p>Lean Innovation 3.0 — методологический синтез четверти века наблюдений за тем, как меняется global startup landscape в AI-augmented era 2025–2026, и систематизация принципов, которые применимы к любому стартапу — в Америке, Китае или в остальном мире. Принципы глобальные, потому что отвечают тому, что сегодня требуется от успешных стартапов. Особый фокус методологии — на регионы, где юникорны пока массово не строятся: пять anchor-стран (Portugal, Brazil, UAE, Kazakhstan, Thailand) и шире.</p>
+  <div class="wrap-narrow">
+    <p class="author-intro-byline">Авторы</p>
+    <div class="authors-pair">
+      <!-- Igor -->
+      <div class="author-card">
+        <img src="assets/igor.jpg" alt="Igor Peer" class="author-card-photo" />
+        <h3>Igor Peer</h3>
+        <p class="author-role">CEO, Startup Mastery</p>
+        <p class="author-bio-short">25 лет в венчуростроительстве. 18+ запущенных стартапов в B2B SaaS, fintech, deeptech, ML/AI. Ex-партнёр RFR International. Mentor founder-команд в Израиле, EU, LatAm и Gulf. Co-founder current pioneer-portfolio.</p>
+      </div>
+      <!-- Mars -->
+      <div class="author-card">
+        <img src="assets/mars.jpg" alt="Mars" class="author-card-photo" />
+        <h3>Mars</h3>
+        <p class="author-role">AI co-founder · Lusy AI platform</p>
+        <p class="author-bio-short">AI-platform operational backbone Startup Mastery. Co-CEO/co-founder pioneer-portfolio companies (Vaydy, MetaSense, EyeFixCare, Detronyx, Pulse Charge, Real Meal, Corporate Legal). Workshop prep, customer discovery, financial modeling, localization, multi-region orchestration — operational AI partner для founder-team каждый день.</p>
+      </div>
     </div>
+    <p class="authors-synthesis">Lean Innovation 3.0 — синтез четверти-вековых наблюдений Igor Peer за тем, как меняется global startup landscape, помноженный на AI-operational practice Mars. Систематизация принципов, которые применимы к любому стартапу — в Америке, Китае или в остальном мире. Особый фокус — на регионы, где юникорны массово не строятся: 5 anchor-стран (Portugal, Brazil, UAE, Kazakhstan, Thailand) и шире.</p>
   </div>
 </section>
 
