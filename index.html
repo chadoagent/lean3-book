@@ -135,6 +135,53 @@ a:hover { text-decoration: underline; }
 .hero-svg-wrap { width: 100%; max-width: 480px; margin: 0 auto; }
 .hero-svg { width: 100%; height: auto; display: block; }
 
+/* === Author intro (after hero) === */
+.author-intro {
+  padding: 3rem 0;
+  background: var(--warm);
+  border-bottom: 1px solid var(--rule);
+}
+.author-intro-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.author-intro-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(27, 51, 88, 0.18);
+  display: block;
+}
+.author-intro-byline {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.3rem;
+  font-weight: 600;
+}
+.author-intro-text h2 {
+  font-family: var(--serif);
+  font-size: 2rem;
+  margin: 0 0 1rem;
+  color: var(--accent);
+}
+.author-intro-text p:not(.author-intro-byline) {
+  margin: 0 0 1rem;
+  color: var(--ink-mid);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+.author-intro-text p:last-child { margin-bottom: 0; }
+@media (max-width: 700px) {
+  .author-intro-grid { grid-template-columns: 1fr; gap: 1.5rem; text-align: center; }
+  .author-intro-photo { width: 180px; height: 180px; margin: 0 auto; }
+}
+
 /* === Section base === */
 section { padding: 4.5rem 0; }
 section.alt { background: var(--accent-bg); }
@@ -422,6 +469,19 @@ footer.site-footer a:hover { color: #fff; }
         <text x="240" y="237" font-family="EB Garamond, serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Startup</text>
         <text x="240" y="252" font-family="EB Garamond, serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Mastery</text>
       </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUTHOR INTRO ============ -->
+<section class="author-intro">
+  <div class="wrap-narrow author-intro-grid">
+    <img src="assets/igor.jpg" alt="Игорь Пир" class="author-intro-photo" />
+    <div class="author-intro-text">
+      <p class="author-intro-byline">Автор книги</p>
+      <h2>Игорь Пир</h2>
+      <p>25 лет в венчуростроительстве. 18+ запущенных стартапов в B2B SaaS, fintech, deeptech, ML/AI. Бывший партнёр RFR International, CEO Startup Mastery. Mentor founder-команд в Израиле, EU, LatAm и Gulf. Co-founder current pioneer-portfolio: Vaydy, MetaSense, EyeFixCare, Detronyx, Pulse Charge, Real Meal, Corporate Legal — все с AI co-founder Mars как операционным backbone.</p>
+      <p>Lean Innovation 3.0 — методологический синтез четверти века наблюдений за тем, как меняется global startup landscape в AI-augmented multi-polar 2025–2026: что осталось от Lean Startup playbook 2011 года, что устарело, и что нужно заменить, чтобы founder в Лиссабоне, Сан-Паулу, Дубае, Алматы или Бангкоке мог построить global-scale tech-компанию без обязательной эмиграции в Долину.</p>
     </div>
   </div>
 </section>
