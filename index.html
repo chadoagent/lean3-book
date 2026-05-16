@@ -559,27 +559,33 @@ footer.site-footer a:hover { color: #fff; }
             <stop offset="60%" stop-color="#1B3358" stop-opacity="0.04"/>
             <stop offset="100%" stop-color="#1B3358" stop-opacity="0"/>
           </radialGradient>
+          <marker id="arrowPrimary" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#1B3358"/>
+          </marker>
+          <marker id="arrowSecondary" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4A6FA0"/>
+          </marker>
         </defs>
         <!-- background glow -->
         <circle cx="240" cy="260" r="220" fill="url(#centerGlow)"/>
         <!-- uncertainty/risk orbital rings (dashed) -->
         <circle cx="240" cy="260" r="185" fill="none" stroke="#1B3358" stroke-opacity="0.10" stroke-width="1" stroke-dasharray="3 4"/>
         <circle cx="240" cy="260" r="120" fill="none" stroke="#1B3358" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="2 3"/>
-        <!-- triangle edges + spokes -->
-        <g stroke="#1B3358" stroke-opacity="0.38" stroke-width="1.4" fill="none">
-          <!-- outer triangle: Founder (top) — Customer (bot-left) — Investor (bot-right) -->
-          <line x1="240" y1="90" x2="110" y2="400"/>
-          <line x1="110" y1="400" x2="370" y2="400"/>
-          <line x1="370" y1="400" x2="240" y2="90"/>
-          <!-- spokes from center to vertices -->
-          <line x1="240" y1="260" x2="240" y2="90" stroke-opacity="0.18"/>
-          <line x1="240" y1="260" x2="110" y2="400" stroke-opacity="0.18"/>
-          <line x1="240" y1="260" x2="370" y2="400" stroke-opacity="0.18"/>
+        <!-- spokes from center to vertices (faint background) -->
+        <g stroke="#1B3358" stroke-opacity="0.18" stroke-width="1.2" fill="none">
+          <line x1="240" y1="260" x2="240" y2="90"/>
+          <line x1="240" y1="260" x2="110" y2="400"/>
+          <line x1="240" y1="260" x2="370" y2="400"/>
         </g>
+        <!-- PRIMARY directional arrow: Founder → Customer (Lean Innovation 3.0 — customer first) -->
+        <line x1="232" y1="108" x2="124" y2="383" stroke="#1B3358" stroke-opacity="0.92" stroke-width="2.6" marker-end="url(#arrowPrimary)"/>
+        <!-- SECONDARY arrows: Customer → Investor (traction → funding) and Founder → Investor (vision → conviction) -->
+        <line x1="130" y1="400" x2="350" y2="400" stroke="#4A6FA0" stroke-opacity="0.65" stroke-width="1.8" marker-end="url(#arrowSecondary)"/>
+        <line x1="248" y1="108" x2="356" y2="383" stroke="#4A6FA0" stroke-opacity="0.65" stroke-width="1.8" marker-end="url(#arrowSecondary)"/>
         <!-- edge captions: psychology of decision under uncertainty -->
         <g font-family="Inter, sans-serif" font-size="9.5" font-style="italic" fill="#6A6A6A" text-anchor="middle">
-          <text x="158" y="240">uncertainty</text>
-          <text x="322" y="240">uncertainty</text>
+          <text x="158" y="248">uncertainty</text>
+          <text x="322" y="248">uncertainty</text>
           <text x="240" y="423">risk</text>
         </g>
         <!-- 3 actor nodes -->
