@@ -561,47 +561,46 @@ footer.site-footer a:hover { color: #fff; }
           </radialGradient>
         </defs>
         <!-- background glow -->
-        <circle cx="240" cy="240" r="220" fill="url(#centerGlow)"/>
-        <!-- orbital circles -->
-        <circle cx="240" cy="240" r="180" fill="none" stroke="#1B3358" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="3 4"/>
-        <circle cx="240" cy="240" r="110" fill="none" stroke="#1B3358" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 3"/>
-        <!-- connection lines: from center to each hub, and hub-to-hub -->
-        <g stroke="#1B3358" stroke-opacity="0.35" stroke-width="1.2" fill="none">
-          <!-- center to 5 hubs -->
-          <line x1="240" y1="240" x2="240" y2="70"/>
-          <line x1="240" y1="240" x2="402" y2="178"/>
-          <line x1="240" y1="240" x2="340" y2="402"/>
-          <line x1="240" y1="240" x2="140" y2="402"/>
-          <line x1="240" y1="240" x2="78" y2="178"/>
-          <!-- hub-to-hub pentagon outline -->
-          <line x1="240" y1="70" x2="402" y2="178" stroke-opacity="0.18"/>
-          <line x1="402" y1="178" x2="340" y2="402" stroke-opacity="0.18"/>
-          <line x1="340" y1="402" x2="140" y2="402" stroke-opacity="0.18"/>
-          <line x1="140" y1="402" x2="78" y2="178" stroke-opacity="0.18"/>
-          <line x1="78" y1="178" x2="240" y2="70" stroke-opacity="0.18"/>
+        <circle cx="240" cy="260" r="220" fill="url(#centerGlow)"/>
+        <!-- uncertainty/risk orbital rings (dashed) -->
+        <circle cx="240" cy="260" r="185" fill="none" stroke="#1B3358" stroke-opacity="0.10" stroke-width="1" stroke-dasharray="3 4"/>
+        <circle cx="240" cy="260" r="120" fill="none" stroke="#1B3358" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="2 3"/>
+        <!-- triangle edges + spokes -->
+        <g stroke="#1B3358" stroke-opacity="0.38" stroke-width="1.4" fill="none">
+          <!-- outer triangle: Founder (top) — Customer (bot-left) — Investor (bot-right) -->
+          <line x1="240" y1="90" x2="110" y2="400"/>
+          <line x1="110" y1="400" x2="370" y2="400"/>
+          <line x1="370" y1="400" x2="240" y2="90"/>
+          <!-- spokes from center to vertices -->
+          <line x1="240" y1="260" x2="240" y2="90" stroke-opacity="0.18"/>
+          <line x1="240" y1="260" x2="110" y2="400" stroke-opacity="0.18"/>
+          <line x1="240" y1="260" x2="370" y2="400" stroke-opacity="0.18"/>
         </g>
-        <!-- 5 hub nodes -->
-        <g fill="#fff" stroke="#1B3358" stroke-width="2">
-          <circle cx="240" cy="70" r="14"/>
-          <circle cx="402" cy="178" r="14"/>
-          <circle cx="340" cy="402" r="14"/>
-          <circle cx="140" cy="402" r="14"/>
-          <circle cx="78" cy="178" r="14"/>
+        <!-- edge captions: psychology of decision under uncertainty -->
+        <g font-family="Inter, sans-serif" font-size="9.5" font-style="italic" fill="#6A6A6A" text-anchor="middle">
+          <text x="158" y="240">uncertainty</text>
+          <text x="322" y="240">uncertainty</text>
+          <text x="240" y="423">risk</text>
         </g>
-        <!-- hub labels -->
-        <g font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#1B3358" text-anchor="middle">
-          <text x="240" y="48">Portugal</text>
-          <text x="430" y="172">UAE</text>
-          <text x="372" y="424">Kazakhstan</text>
-          <text x="108" y="424">Brazil</text>
-          <text x="48" y="172">Thailand</text>
+        <!-- 3 actor nodes -->
+        <g fill="#fff" stroke="#1B3358" stroke-width="2.2">
+          <circle cx="240" cy="90" r="18"/>
+          <circle cx="110" cy="400" r="18"/>
+          <circle cx="370" cy="400" r="18"/>
         </g>
-        <!-- central hub -->
-        <circle cx="240" cy="240" r="32" fill="#1B3358"/>
-        <circle cx="240" cy="240" r="32" fill="none" stroke="#1B3358" stroke-opacity="0.25" stroke-width="14"/>
-        <text x="240" y="237" font-family="EB Garamond, serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Startup</text>
-        <text x="240" y="252" font-family="EB Garamond, serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Mastery</text>
+        <!-- actor labels -->
+        <g font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1B3358" text-anchor="middle">
+          <text x="240" y="58">Founder</text>
+          <text x="110" y="438">Customer</text>
+          <text x="370" y="438">Investor</text>
+        </g>
+        <!-- central node: Prospect Theory -->
+        <circle cx="240" cy="260" r="44" fill="#1B3358"/>
+        <circle cx="240" cy="260" r="44" fill="none" stroke="#1B3358" stroke-opacity="0.22" stroke-width="14"/>
+        <text x="240" y="256" font-family="EB Garamond, serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Prospect</text>
+        <text x="240" y="272" font-family="EB Garamond, serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Theory</text>
       </svg>
+      <p style="font-size: 0.92rem; color: var(--ink-soft); font-style: italic; text-align: center; margin: 0.6rem auto 0; max-width: 36em; line-height: 1.5;">Три actor-а в условиях uncertainty / risk. Lean Innovation 3.0 систематизирует <strong>Prospect Theory Канеман-Тверски</strong> как методологическую базу всех глав.</p>
     </div>
   </div>
 </section>
