@@ -326,6 +326,27 @@ p { margin: 0 0 1.1rem; }
   margin-top: 0.9rem;
 }
 
+/* === Golden / Bermuda triangle === */
+.golden-bermuda {
+  padding: 5rem 0;
+  background: var(--warm);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.golden-bermuda h2 {
+  max-width: 18em;
+  margin-bottom: 1.5rem;
+}
+.golden-bermuda p {
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0 0 1.3rem;
+}
+.golden-bermuda p strong { color: var(--accent); font-weight: 600; }
+.golden-bermuda p:last-child { margin-bottom: 0; }
+
 /* === For governments === */
 .for-gov { padding: 5rem 0; background: var(--accent-bg); border-bottom: 1px solid var(--rule); }
 .for-gov h2 { max-width: 18em; }
@@ -650,6 +671,17 @@ footer.site-footer a:hover { color: #fff; }
   </div>
 </section>
 
+<!-- ============ GOLDEN / BERMUDA TRIANGLE ============ -->
+<section class="golden-bermuda" id="golden-bermuda">
+  <div class="wrap-narrow">
+    <p class="section-eyebrow">Триангуляция стартапа</p>
+    <h2>Золотой треугольник или Бермудский?</h2>
+    <p>Каждый стартап существует в треугольнике <strong>Founder–Customer–Investor</strong>. Через два-три года из этого треугольника выходит либо <strong>Золотой треугольник</strong> — exit, IPO, unicorn-status, всё что делает стартап успешным — либо <strong>Бермудский</strong>: команда распадается, продукт не нашёл рынок, инвестор разочарован.</p>
+    <p>Между этими двумя исходами лежит не удача, не качество идеи и не размер раунда. Лежит <strong>психология принятия решений в условиях uncertainty и risk</strong>. Founder принимает решения о продукте под uncertainty; Customer принимает решения о покупке под uncertainty; Investor принимает решения о вложении под uncertainty. На каждой из этих сторон работают одни и те же когнитивные искажения, документированные в <strong>Prospect Theory</strong> Канеман-Тверски (Нобелевская премия по экономике 2002 года).</p>
+    <p>Lean Innovation 3.0 наложила нобелевскую теорию на треугольник стартапа и получила <strong>систематический инструмент</strong>: где между Founder и Customer возникает loss aversion, где в Customer-сегменте срабатывает reference dependence, где Investor отрабатывает risk aversion и анкоринг. На основании этого анализа построена <strong>платформа</strong>, которая делает методологические инструменты доступными для любого стартапа в любой точке мира.</p>
+  </div>
+</section>
+
 <!-- ============ FOR GOVERNMENTS ============ -->
 <section id="for-governments" class="for-gov">
   <div class="wrap-narrow">
@@ -691,9 +723,16 @@ footer.site-footer a:hover { color: #fff; }
     <div class="section-eyebrow">Manifesto</div>
     <h2>Next-level методология запуска стартапов.</h2>
     <div class="manifesto-body">
-      <p>Принципы, на которых строились успешные стартапы пятнадцать лет назад, изменились. <strong>AI-революция + geopolitical fragmentation + rise национальных tech-экосистем</strong> = новая операционная реальность, в которой требуется обновлённая методология запуска.</p>
-      <p>Lean Innovation 3.0 систематизирует эти принципы как next-level методологию — worldwide по применимости. Она работает для любого стартапа в любой локации — в зрелых венчурных рынках, где юникорны строятся и так, и в остальном мире, где venture flywheel пока недо-развит. Принципы одни — потому что отвечают тому, что сегодня требуется от успешных стартапов в AI-augmented multi-polar реальности.</p>
-      <p>Capital фрагментирован между сотней регионов. AI режет dev-cost в 10×. Distribution идёт через global digital channels. <strong>Методология должна соответствовать этой новой норме.</strong></p>
+      <p>Стандартная методология запуска стартапов, которой пользуется большинство founder-команд сегодня, <strong>устарела</strong>. Она формировалась в эпоху pre-AI венчура, до появления prospect theory как rigorous методологического инструмента, и до того, как глобальный venture landscape стал по-настоящему multi-polar.</p>
+      <p>Результат — низкий процент success rate для стартапов в любой локации мира. По разным research-источникам, только 1–2% Series A компаний достигают $1B+ valuation. Большинство стартапов проходят через <strong>«Бермудский треугольник»</strong> — терпят неудачу в точках decision-making под uncertainty и risk, которые методология предыдущего поколения не учитывает.</p>
+      <p><strong>Lean Innovation 3.0 решает эту проблему через четыре слоя:</strong></p>
+      <ol style="font-family: var(--serif); font-size: 1.18rem; line-height: 1.55; color: var(--ink); padding-left: 1.4em; margin: 0 0 1.4rem;">
+        <li style="margin-bottom: 0.6rem;"><strong>Психологическая основа</strong> — Prospect Theory Канеман-Тверски как scientific подложка (Нобелевская премия 2002 года за работы 1979–1992).</li>
+        <li style="margin-bottom: 0.6rem;"><strong>Триангуляция Founder–Customer–Investor</strong> — три actor-а в системе decision-making под uncertainty / risk.</li>
+        <li style="margin-bottom: 0.6rem;"><strong>AI co-founder vector</strong> — AI-augmented operational practice на каждом уровне.</li>
+        <li style="margin-bottom: 0.6rem;"><strong>Local PMF / Global PMF analysis</strong> — структурный фреймворк для масштабирования.</li>
+      </ol>
+      <p><strong>Результат:</strong> founder-команда движется по треугольнику стартапа от Бермудского (failure) к <strong>Золотому (exit, успех)</strong>. Систематическое увеличение % success rate worldwide — для стартапов в любой точке мира.</p>
     </div>
   </div>
 </section>
@@ -759,7 +798,7 @@ footer.site-footer a:hover { color: #fff; }
       <div class="hook">
         <div class="hook-num">09</div>
         <h3 class="hook-title">Global PMF + Global Venture Studio</h3>
-        <p class="hook-body">5 anchor hubs: Portugal, Brazil, UAE, Kazakhstan, Thailand. Mario Draghi диагностировал EU scale-up gap — те же структурные слои ломают local→global flywheel в большинстве регионов worldwide за пределами зрелых венчурных рынков.</p>
+        <p class="hook-body">5 anchor hubs: Portugal, Brazil, UAE, Kazakhstan, Thailand. Mario Draghi systematically диагностировал scale-up gap в Европе — но те же структурные слои (cultural, regulatory, sales motion, partner ecosystem, payment) ломают local→global path для любого стартапа в любой локации worldwide. Lean 3.0 systematizes решение.</p>
       </div>
 
       <div class="hook">
